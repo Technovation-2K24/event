@@ -9,12 +9,12 @@
 </head>
 <body>
     <main class="kode-mono-techno-font">
-        <section id="hero-section" class="w-screen h-screen flex flex-col justify-center items-center lg:flex-row lg:justify-evenly">
-            <div class="mb-7 text-4xl lg:text-7xl default-text-color text-center lg:text-end lg:basis-2/5">
+        <section id="hero-section" class="w-screen h-screen flex flex-col justify-center items-center lg:flex-row lg:justify-evenly py-10">
+            <div class="mb-3 text-4xl lg:text-7xl default-text-color text-center lg:text-end lg:w-2/4">
                 <h1 id="hero-heading" class="inline font-bold text-end"></h1>
             </div>
 
-            <div class=" flex flex-col justify-center items-center gap-3 default-text-color font-extrabold self-center basis-5 lg:basis-0 text-lg lg:text-2xl h-full" id="events">
+            <div class="flex flex-col justify-center items-center gap-3 default-text-color font-extrabold self-center lg:basis-0 text-lg lg:text-2xl lg:w-2/4 h-full" id="events">
                     <a href="#it-manager">IT-Manager</a>
                     <a href="#coding">Coding</a>
                     <a href="#debate">Debate</a>
@@ -30,9 +30,44 @@
             </div>
         </section>
 
-        <!--Packages-->
-        <h1 class="w-screen text-4xl default-text-color text-center underline font-extrabold mb-12">Special Packages</h1>
         
+        <nav class="w-screen h-0 flex flex-row justify-between items-center text-white font-bold text-wrap px-10 fixed backdrop-blur-sm bg-purple-500/50 z-10 rounded-b-lg" id="navbar">
+            <a href="https://technovation-2k24.github.io/Technovation/home_page/home.html" class="pl-2 text-2xl w-fit">Home</a>
+            <div class="text-white text-sm flex flex-row justify-center items-center gap-4 mr-9" id="events-nav">
+                <a href="#it-manager">IT-Manager</a>
+                <a href="#coding">Coding</a>
+                <a href="#debate">Debate</a>
+                <a href="#it-quiz">IT-Quiz</a>
+                <a href="#photography">Photography</a>
+                <a href="#data-vis">Data Visualization</a>
+                <a href="#gaming">Gaming</a>
+                <a href="#pic-speak">Pic Speaking</a>
+                <a href="#startup">Idea Presentation</a>
+                <a href="#logo-design">Logo Design</a>
+                <a href="#math-stat">Maths and Stat</a>
+                <a href="#fashion-walk">Fashion Walk</a>
+            </div>
+        
+            <div class="text-white font-extrabold text-sm flex-col gap-3 items-center justify-center absolute top-16 right-0 w-40 py-4 backdrop-blur-sm bg-purple-500/70 z-50 rounded-b-lg" id="events-mobile-nav">
+                <a href="#it-manager">IT-Manager</a>
+                <a href="#coding">Coding</a>
+                <a href="#debate">Debate</a>
+                <a href="#it-quiz">IT-Quiz</a>
+                <a href="#photography">Photography</a>
+                <a href="#data-vis">Data Visualization</a>
+                <a href="#gaming">Gaming</a>
+                <a href="#pic-speak">Pic Speaking</a>
+                <a href="#startup">Idea Presentation</a>
+                <a href="#logo-design">Logo Design</a>
+                <a href="#math-stat">Maths and Stat</a>
+                <a href="#fashion-walk">Fashion Walk</a>
+            </div>
+            <button id="show-nav" class="mr-6 w-8 h-1 relative bg-white rounded"></button>
+        </nav>
+        <!--Packages-->
+        
+        <h1 class="w-screen text-4xl default-text-color text-center underline font-extrabold mt-28" id="package-heading">Special Packages</h1>
+
         <div id="packages" data-aos="fade-down" class="h-72 lg:h-96 flex flex-row justify-center items-center w-screen border-x-4 border-x-purple-800 mb-20 lg:text-2xl">
             <div class="px-5 flex flex-col justify-center items-center">
                 <h1 class="text-2xl default-text-color font-bold ">Package 1</h1>
@@ -57,7 +92,9 @@
                 <p class="text-white font-extrabold grow">For a price<br> of Rs.1200</p>
             </div>
         </div>
-        <section class="container mx-auto w-full max-h-screen-md">
+
+        <!--Events Section-->
+        <section class="container mx-auto w-full max-h-screen-md z-0" id="events-section">
 
             <!--Events-->
             <!-- IT Manager -->
@@ -66,7 +103,7 @@
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold">IT-Manager</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/IT manager.png" alt="IT-manager.jpg" class=" w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
+                    <img src="./logos/IT manager.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                 </div>
                 <div class="event-rules col-span-2 w-80" data-aos="fade-down" data-aos-duration="1000">
                     <h3 class="default-text-color text-lg lg:text-xl font-semibold">Rules: (Consists of 3 round)</h3>
@@ -90,14 +127,14 @@
                     </p>
                 </div>
             </div>
-            
+
             <!--CODING-->
             <div id="coding" class="py-10 default-event-container-mobile lg:default-event-container">
                 <header class="w-full h-14 text-center col-span-6">
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="coding-heading" data-aos="fade-down" data-aos-duration="1000">Code Craft(Coding)</h1>
                 </header>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/Coding.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
+                    <img src="/public/logos/Coding.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                 </div>
                 <div class="event-rules col-span-2 w-80" data-aos="fade-down" data-aos-duration="1000">
                     <h3 class="default-text-color text-lg lg:text-xl">Rules:</h3>
@@ -122,13 +159,13 @@
                 </div>
             </div>
 
-            <!--debate-->
+            <!--DEBATE-->
             <div id="debate" class="py-10  default-event-container-mobile lg:default-event-container">
                 <div class="w-full h-14 text-center col-span-6">
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="debate-heading" data-aos="fade-down" data-aos-duration="1000">Rhetorica(DEBATE)</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/debate.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded">
+                    <img src="/public/logos/debate.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded">
                 </div>
                 <div class="event-rules col-span-2 mb-7 w-96 px-5" data-aos="fade-down" data-aos-duration="1000">
                     <h3 class="default-text-color text-lg lg:text-xl">Rules:</h3>
@@ -161,13 +198,13 @@
             <!--IT-QUIZ-->
             <div id="it-quiz" class="py-10  default-event-container-mobile lg:default-event-container">
                 <div class="w-full h-14 text-center col-span-6" data-aos="fade-down" data-aos-duration="1000">
-                    <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="it-quiz-heading">Cosmic Code Quest<br>(IT-QUIZ)</h1>
+                    <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="it-quiz-heading">Cosmic Code Quest(IT-QUIZ)</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/IT quiz.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
+                    <img src="/public/logos/IT quiz.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                 </div>
                 <div class="event-rules col-span-2 w-80" data-aos="fade-down" data-aos-duration="1000">
-                    <h3 class="default-text-color text-lg lg:text-xl font-semibold">Rules: (Consists of 3 round)</h3>
+                    <h3 class="default-text-color text-base lg:text-xl font-semibold">Rules: (Consists of 3 round)</h3>
                     <ul class="text-white text-sm lg:text-xl list-disc">
                         <li>Round 1: QUIZ (QUALIFIER ROUND).</li>
                         <li>Round 2: QUIZ (QUALIFIER ROUND).</li>
@@ -196,7 +233,7 @@
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="photo">Luminaris(Photography)</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/photography.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">    
+                    <img src="/public/logos/photography.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">    
                 </div>
                 <div class="event-rules col-span-2 w-80" data-aos="fade-down" data-aos-duration="1000">
                     <h3 class="default-text-color text-lg lg:text-xl font-semibold">Rules:</h3>
@@ -228,7 +265,7 @@
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold text-wrap" id="data-vis-heading">Insight Scape(Data Visualization)</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/dat-vis.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
+                    <img src="/public/logos/dat-vis.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                     
                 </div>
                 <div class="event-rules col-span-2 w-80" data-aos="fade-down" data-aos-duration="1000">
@@ -262,7 +299,7 @@
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="gaming-heading">Galactic Showdown<br>(Gaming - BGMI)</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/gaming.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
+                    <img src="/public/logos/gaming.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                     
                 </div>
                 <div class="event-rules col-span-2 w-96 px-5" data-aos="fade-down" data-aos-duration="1000">
@@ -297,7 +334,7 @@
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="pic-speak-heading">Visage Verse<br>(Pic Speaking)</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/pic and speak.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
+                    <img src="/public/logos/pic and speak.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                     
                 </div>
                 <div class="event-rules col-span-2 w-96 px-4" data-aos="fade-down" data-aos-duration="1000">
@@ -321,18 +358,20 @@
                     </p>
                 </div>
             </div>
+
             <!--Startup-->
             <div id="startup" class="default-event-container-mobile mb-10
             lg:default-event-container">
                 <div class="w-full h-14 text-center col-span-6">
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="startup-heading" data-aos="fade-down" data-aos-duration="1000">Innovatia(Start-up Idea)</h1>
                 </div>
-                <div class="images h-full col-span-2 flex items-center pt-11" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/startup.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
-                    
+
+                <div class="images h-fit col-span-2 flex items-center pt-11" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="/public/logos/startup.png" alt="IT-manager.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                 </div>
-                <div class="event-rules col-span-2 w-96 px-5">
-                    <h3 class="default-text-color text-lg lg:text-xl font-semibold" data-aos="fade-down" data-aos-duration="1000">Rules:</h3>
+
+                <div class="event-rules h-full col-span-2 px-5">
+                    <h3 class="default-text-color text-lg lg:text-base font-semibold" data-aos="fade-down" data-aos-duration="1000">Rules:</h3>
                     <ul class="text-white text-xs lg:text-sm lg:w-96 list-disc">
                         <li>Topic: The startup idea or paper presentation must be related to Information Technology or a relevant subfield such as artificial intelligence, cybersecurity, software development, etc.</li>
                         <li>Originality: Submissions must be original ideas or research work. Plagiarism will result in disqualification. </li>
@@ -343,7 +382,8 @@
                         <li>Tech Requirements: Teams must ensure that they have all necessary technical equipment (e.g., laptop) for their presentation.</li>
                     </ul>
                 </div>
-                <div class="event-details col-span-2" data-aos="fade-down" data-aos-duration="1000">
+
+                <div class="event-details col-span-1" data-aos="fade-down" data-aos-duration="1000">
                     <ol class="text-white text-wrap list-decimal mb-2 text-sm lg:text-base">
                         <h3 class="default-text-color text-lg">CO-ORDINATORS:</h3>
                         <li>HARSHINI. R - 8550029871</li>
@@ -364,7 +404,7 @@
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="logo-heading">Glyphic Genesis(Logo Design)</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/logo design.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
+                    <img src="/public/logos/logo design.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                     
                 </div>
                 <div class="event-rules col-span-2 w-80" data-aos="fade-down" data-aos-duration="1000">
@@ -398,7 +438,7 @@
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="math-heading">Calculus Cosmos(Maths and Statistics)</h1>
                 </div>
                 <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/math and stat.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
+                    <img src="/public/logos/math and stat.png" alt="IT-quiz.jpg" class="w-36 lg:w-56 lg:h-56 h-36 rounded place-self-center">
                     
                 </div>
                 <div class="event-rules col-span-2 w-80" data-aos="fade-down" data-aos-duration="1000">
@@ -430,8 +470,8 @@
                 <div class="w-full h-14 text-center col-span-6" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="default-text-color text-2xl lg:text-5xl font-bold" id="fashion-walk=heading">Interstellar Innovations(Fashion Walk)</h1>
                 </div>
-                <div class="images h-full col-span-2 flex items-center" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="./logos/Fashion walk.png" alt="IT-quiz.jpg" class="w-36 h-44 rounded place-self-center">
+                <div class="images h-full col-span-2 flex items-center py-10" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="/public/logos/Fashion walk.png" alt="IT-quiz.jpg" class="w-36 h-44 rounded place-self-center">
                     
                 </div>
                 <div class="event-rules col-span-2 w-96 px-5" data-aos="fade-down" data-aos-duration="1000">
@@ -443,7 +483,7 @@
                         <li>Vulgarity is strongly prohibited. Any form of obscenity will lead to debarring the team from the contest.</li>
                     </ul>
                 </div>
-                <div class="event-details col-span-2" data-aos="fade-down" data-aos-duration="1000">
+                <div class="event-details col-span-2 mb-6" data-aos="fade-down" data-aos-duration="1000">
                     <ol class="text-white text-base lg:text-xl text-wrap list-decimal mb-6">
                         <h3 class="default-text-color text-lg font-semibold">CO-ORDINATORS:</h3>
                         <li>Sahithya P. - 7975009488</li>
@@ -458,15 +498,15 @@
                 </div>
             </div>
         </section>
-        
+
         <!--Registration-->
-        <section id="registration" class="py-10 default-text-color w-screen h-80 lg:h-80 border-t-4 border-t-purple-600">
+        <section id="registration" class="py-10 default-text-color w-screen h-72 lg:h-80 border-t-4 border-t-purple-600">
             <div class="flex flex-col lg:flex-row justify-evenly items-center gap-5">
-                <a href="https://forms.gle/RGCLoGUS8cc3sr3i8" class="default-text-color text-4xl font-extrabold underline" target="_blank">Register Now!</a>
-                <img src="./registration_qr.jpeg" alt="https://forms.gle/RGCLoGUS8cc3sr3i8" class="text-white lg:w-52 lg:h-52" width="180px" height="180px">
+                <a href="https://forms.gle/RGCLoGUS8cc3sr3i8" class="default-text-color lg:text-4xl text-3xl font-extrabold underline" target="_blank">Register Now!</a>
+                <img src="/public/registration_qr.jpeg" alt="https://forms.gle/RGCLoGUS8cc3sr3i8" class="text-white w-36 h-36 lg:w-52 lg:h-52 filter-none" width="180px" height="180px">
             </div>
         </section>
-        
+
         <!--Footer-->
         <section class="bg-black/70 border-t-4 border-t-purple-600">
             <footer id="footer" class="pt-8 pb-5">
