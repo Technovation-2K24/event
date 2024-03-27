@@ -3,7 +3,6 @@ module.exports = {
   content: ["./public/*.html"],
   theme: {
     extend: {
-      'hero-image':"url('./public/assets/hero_section.jpg')",
       fontSize: {
         xs: "0.75rem",
         sm: "0.875rem",
