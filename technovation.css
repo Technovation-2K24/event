@@ -1197,9 +1197,6 @@ img{
     animation: bg-appear 250ms ease forwards;
 }
 @keyframes bg-appear{
-    0%{
-        background-color: transparent;
-    }
     100%{
         --tw-bg-opacity: 1;
     background-color: rgb(107 33 168 / var(--tw-bg-opacity));
